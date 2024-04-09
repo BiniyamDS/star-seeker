@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>Star Seeker</title>
-</head>
-<body>
+  </head>
+  <body>
     Hello Star seeker!
-    <form action="/api/stars" method="get">
-        <input type="date" name="start" id="start">
-        <input type="date" name="end" id="end">
-        <button type="submit">Submit</button>
+    <form>
+      <input
+        type="date"
+        name="start"
+        id="start"
+      />
+      <input
+        type="date"
+        name="end"
+        id="end"
+      />
+      <button
+        type="submit"
+        class="submit-btn"
+      >
+        Submit
+      </button>
     </form>
-</body>
+    <div id="results"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./results.js"></script>
+  </body>
 </html>
